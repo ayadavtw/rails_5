@@ -1,0 +1,1909 @@
+  [1m[35m (753.7ms)[0m  [1m[35mCREATE DATABASE "product" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (16.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7279204289221598265)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-08 05:18:12.028815"], ["updated_at", "2020-05-08 05:18:12.028815"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7279204289221598265)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/" for ::1 at 2020-05-08 11:07:19 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 47ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-05-08 11:07:20 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-05-08 11:07:21 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-08 11:07:22 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 11:10:46 +0530
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ProductsController):
+  
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (617.9ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-08 05:53:42.461795"], ["updated_at", "2020-05-08 05:53:42.461795"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/" for ::1 at 2020-05-08 11:24:07 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-08 11:24:08 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 11:31:21 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for ProductsController):
+  
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products" for ::1 at 2020-05-08 11:31:46 +0530
+Processing by ProductsController#index as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products/create" for ::1 at 2020-05-08 11:32:29 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/products/create"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/products" for ::1 at 2020-05-08 11:32:39 +0530
+Processing by ProductsController#create as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:33:05 +0530
+Processing by ProductsController#create as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:34:08 +0530
+Processing by ProductsController#create as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:35:09 +0530
+Processing by ProductsController#create as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:35:42 +0530
+Processing by ProductsController#create as */*
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:36:42 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"tt", "product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 2.9ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:39:20 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"tt", "product"=>{"name"=>"tt"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 06:09:20.314275"], ["updated_at", "2020-05-08 06:09:20.314275"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 13ms (ActiveRecord: 9.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:41:50 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"tt", "product"=>{"name"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 06:11:50.758599"], ["updated_at", "2020-05-08 06:11:50.758599"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 10ms (ActiveRecord: 6.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 11:42:15 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as */*
+  Parameters: {"name"=>"tt", "product"=>{"name"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 06:12:15.777656"], ["updated_at", "2020-05-08 06:12:15.777656"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 11ms (ActiveRecord: 8.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 13:31:44 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"tt"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (7.2ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 08:01:44.860032"], ["updated_at", "2020-05-08 08:01:44.860032"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 11ms (ActiveRecord: 8.9ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 13:32:57 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 08:02:57.700907"], ["updated_at", "2020-05-08 08:02:57.700907"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 3ms (ActiveRecord: 1.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-08 13:33:33 +0530
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:7
+  [1m[36mProduct Create (0.7ms)[0m  [1m[32mINSERT INTO "products" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-05-08 08:04:42.018396"], ["updated_at", "2020-05-08 08:04:42.018396"]]
+  ↳ app/controllers/products_controller.rb:7
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:7
+Completed 204 No Content in 68731ms (ActiveRecord: 25.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-08 13:34:46 +0530
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:7:in `create'
+Started POST "/products" for 127.0.0.1 at 2020-05-08 13:35:18 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 500 Internal Server Error in 163745ms (ActiveRecord: 7.7ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/products_controller.rb:7:in `create'
+Started POST "/products" for ::1 at 2020-05-08 13:50:00 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 11ms (ActiveRecord: 5.6ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 13:50:59 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 10ms (ActiveRecord: 5.4ms)
+
+
+Started POST "/products" for ::1 at 2020-05-08 13:51:17 +0530
+  [1m[35m (13.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 28ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-08 14:21:50 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 39ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2020-05-08 14:21:56 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/students"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/student" for ::1 at 2020-05-08 14:21:59 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/student"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/product" for ::1 at 2020-05-08 14:22:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/product"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products" for ::1 at 2020-05-08 14:22:09 +0530
+Processing by ProductsController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:13 +0530
+Processing by ProductsController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:29 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:43 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:44 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:45 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:45 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:46 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:46 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-08 14:22:47 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-12 10:31:22 +0530
+  [1m[35m (28.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:31:39 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 46ms (ActiveRecord: 40.1ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:31:45 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:32:24 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 12ms (ActiveRecord: 6.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:32:40 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"tt"}}
+Completed 204 No Content in 11ms (ActiveRecord: 5.7ms)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5020.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started POST "/products" for ::1 at 2020-05-12 10:39:01 +0530
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>12000, "description"=>"This is LED TV"}}
+Completed 204 No Content in 16ms (ActiveRecord: 8.5ms)
+
+
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT  "products".* FROM "products" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/products" for ::1 at 2020-05-12 10:41:30 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>12000, "description"=>"This is LED TV"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:8
+  [1m[36mProduct Create (3.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 12000.0], ["created_at", "2020-05-12 05:11:30.477155"], ["updated_at", "2020-05-12 05:11:30.477155"]]
+  ↳ app/controllers/products_controller.rb:8
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:8
+Completed 204 No Content in 40ms (ActiveRecord: 25.7ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:43:17 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>12000, "description"=>"This is LED TV"}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:8
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 12000.0], ["created_at", "2020-05-12 05:13:17.820658"], ["updated_at", "2020-05-12 05:13:17.820658"]]
+  ↳ app/controllers/products_controller.rb:8
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:8
+Completed 200 OK in 30ms (Views: 1.4ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:43:31 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:8
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 14000.0], ["created_at", "2020-05-12 05:13:31.530009"], ["updated_at", "2020-05-12 05:13:31.530009"]]
+  ↳ app/controllers/products_controller.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:8
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:43:36 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:8
+  [1m[36mProduct Create (1.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 14000.0], ["created_at", "2020-05-12 05:13:36.341114"], ["updated_at", "2020-05-12 05:13:36.341114"]]
+  ↳ app/controllers/products_controller.rb:8
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:8
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 10:45:46 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:8
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 14000.0], ["created_at", "2020-05-12 05:15:46.904870"], ["updated_at", "2020-05-12 05:15:46.904870"]]
+  ↳ app/controllers/products_controller.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:8
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/products/1/show" for ::1 at 2020-05-12 10:46:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/show"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products/10/show" for ::1 at 2020-05-12 10:46:53 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/products/10/show"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products/10" for ::1 at 2020-05-12 10:47:11 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}, "id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find' for nil:NilClass):
+  
+app/controllers/products_controller.rb:4:in `show'
+Started GET "/products/10" for ::1 at 2020-05-12 10:48:50 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}, "id"=>"10"}
+Completed 404 Not Found in 203585ms (ActiveRecord: 15.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  
+app/controllers/products_controller.rb:5:in `show'
+Started GET "/products/10" for ::1 at 2020-05-12 10:52:27 +0530
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"10", "product"=>{}}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 200 OK in 30ms (Views: 1.4ms | ActiveRecord: 17.1ms)
+
+
+Started GET "/products/11" for ::1 at 2020-05-12 10:52:36 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"11", "product"=>{}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/12" for ::1 at 2020-05-12 10:52:38 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"12", "product"=>{}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=12):
+  
+app/controllers/products_controller.rb:4:in `show'
+Started GET "/products/9" for ::1 at 2020-05-12 10:52:43 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"9", "product"=>{}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/9" for ::1 at 2020-05-12 11:31:43 +0530
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"9", "product"=>{}}
+  [1m[36mProduct Load (4.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Product (0.59ms)
+Completed 200 OK in 32ms (Views: 7.8ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/products/9" for ::1 at 2020-05-12 12:10:29 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"9", "product"=>{}}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 35ms (Views: 22.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/products/9" for ::1 at 2020-05-12 12:10:44 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"9", "product"=>{}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 15ms (Views: 2.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/products/index" for ::1 at 2020-05-12 12:11:25 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"index", "product"=>{}}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 404 Not Found in 6ms (ActiveRecord: 6.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=index):
+  
+app/controllers/products_controller.rb:4:in `show'
+Started GET "/products/" for ::1 at 2020-05-12 12:11:30 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.86ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/" for ::1 at 2020-05-12 12:12:00 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/" for ::1 at 2020-05-12 12:12:13 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (31.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5044.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5037.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (154.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (4271.1ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (18.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-12 07:48:26.457334"], ["updated_at", "2020-05-12 07:48:26.457334"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started POST "/products" for ::1 at 2020-05-12 13:21:25 +0530
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 14000.0], ["created_at", "2020-05-12 07:51:25.874030"], ["updated_at", "2020-05-12 07:51:25.874030"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 18ms (Views: 4.2ms | ActiveRecord: 7.6ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started POST "/products" for ::1 at 2020-05-12 13:29:34 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 102ms (Views: 2.4ms | ActiveRecord: 9.4ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 13:30:03 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Fridge", "price"=>12000, "description"=>"This is a double door Fridge"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fridge"], ["description", "This is a double door Fridge"], ["price", 12000.0], ["created_at", "2020-05-12 08:00:03.173377"], ["updated_at", "2020-05-12 08:00:03.173377"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/products/1" for ::1 at 2020-05-12 14:42:59 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"1", "product"=>{}}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+Completed 500 Internal Server Error in 83ms (ActiveRecord: 67.0ms)
+
+
+  
+NameError (undefined local variable or method `ok' for #<ProductsController:0x00007f96aa2ff808>):
+  
+app/controllers/products_controller.rb:4:in `show'
+Started GET "/products" for ::1 at 2020-05-12 14:43:32 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.86ms)
+Completed 200 OK in 118ms (Views: 113.0ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/products/1" for ::1 at 2020-05-12 14:43:39 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"id"=>"1", "product"=>{}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:4
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 14:45:36 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"camera", "price"=>2000, "description"=>"This is a auto focus camera"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "camera"], ["description", "This is a auto focus camera"], ["price", 2000.0], ["created_at", "2020-05-12 09:15:36.197382"], ["updated_at", "2020-05-12 09:15:36.197382"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 20ms (Views: 1.6ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/products" for ::1 at 2020-05-12 14:45:51 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:14
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.72ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for ::1 at 2020-05-12 22:59:03 +0530
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/product.rb:2:in `<class:Product>'
+app/models/product.rb:1:in `<main>'
+Started POST "/products" for ::1 at 2020-05-12 22:59:14 +0530
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/product.rb:2:in `<class:Product>'
+app/models/product.rb:1:in `<main>'
+Started POST "/products" for ::1 at 2020-05-12 23:00:30 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"price"=>2000, "description"=>"This is a auto focus camera"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 200ms (Views: 29.4ms | ActiveRecord: 162.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:01:22 +0530
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"price"=>2000, "description"=>"This is a auto focus camera"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 564588ms (Views: 51.8ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:11:09 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"price"=>2000, "description"=>"This is a auto focus camera"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 42ms (Views: 13.4ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:12:10 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:19:in `product_params'
+app/controllers/products_controller.rb:8:in `create'
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:12:38 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"laptop", "pricea"=>2000, "descriptiona"=>"This is a auto focus camera"}}
+Unpermitted parameters: :namea, :pricea, :descriptiona
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:12:56 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"laptop", "price"=>2000, "descriptiona"=>"This is a auto focus camera"}}
+Unpermitted parameters: :namea, :descriptiona
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.21ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:13:02 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"laptop", "price"=>2000, "descriptiona"=>"This is a auto focus camera"}}
+Unpermitted parameter: :descriptiona
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:13:27 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"laptop", "price"=>200000, "description"=>"This is a funky laptop"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (15.7ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "laptop"], ["description", "This is a funky laptop"], ["price", 200000.0], ["created_at", "2020-05-12 17:43:27.706774"], ["updated_at", "2020-05-12 17:43:27.706774"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+Completed 200 OK in 45ms (Views: 10.0ms | ActiveRecord: 30.5ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:13:50 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"laptop", "price"=>200000, "description"=>"This is a funky laptop"}}
+Unpermitted parameter: :namea
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:15:58 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"laptop", "price"=>"as", "description"=>"This is a funky laptop"}}
+Unpermitted parameter: :namea
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 200 OK in 19ms (Views: 2.6ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-12 23:16:11 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"laptop", "price"=>12.12, "description"=>"This is a funky laptop"}}
+Unpermitted parameter: :namea
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-13 00:36:05 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (9.4ms)
+Completed 200 OK in 47ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 10:17:44 +0530
+  [1m[35m (29.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"namea"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+Unpermitted parameter: :namea
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 123ms (Views: 18.2ms | ActiveRecord: 56.6ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 10:34:25 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (7.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:04:25.945232"], ["updated_at", "2020-05-13 05:04:25.945232"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Product (0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+Completed 500 Internal Server Error in 101ms (Views: 15.6ms | ActiveRecord: 57.5ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/products_controller.rb:10:in `create'
+Started POST "/products" for 127.0.0.1 at 2020-05-13 10:35:58 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:05:58.974901"], ["updated_at", "2020-05-13 05:05:58.974901"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Product (0.55ms)
+Completed 200 OK in 55ms (Views: 17.6ms | ActiveRecord: 15.8ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 10:37:00 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:07:00.805333"], ["updated_at", "2020-05-13 05:07:00.805333"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (7.39ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 15.1ms)
+
+
+  
+NoMethodError (undefined method `model_name' for ProductsSerializer:Class):
+  
+app/controllers/products_controller.rb:10:in `create'
+Started POST "/products" for 127.0.0.1 at 2020-05-13 11:11:23 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:41:23.850807"], ["updated_at", "2020-05-13 05:41:23.850807"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.35ms)
+Completed 200 OK in 50ms (Views: 0.7ms | ActiveRecord: 39.2ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 11:11:26 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:41:26.275514"], ["updated_at", "2020-05-13 05:41:26.275514"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 11:11:58 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:41:59.016151"], ["updated_at", "2020-05-13 05:41:59.016151"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered SampleSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 22ms (Views: 0.7ms | ActiveRecord: 9.9ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 11:12:00 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:42:00.069322"], ["updated_at", "2020-05-13 05:42:00.069322"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered SampleSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2020-05-13 11:12:00 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 05:42:00.673966"], ["updated_at", "2020-05-13 05:42:00.673966"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered SampleSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2020-05-13 11:12:38 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.68ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2020-05-13 11:13:04 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 4.7ms)
+
+
+  
+LoadError (cannot load such file -- /Users/ayadav/Desktop/rails/rails_5/product-api/app/serializers/product_serializer.rb):
+  
+app/controllers/products_controller.rb:18:in `index'
+Started GET "/products" for 127.0.0.1 at 2020-05-13 11:13:37 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+No serializer found for resource: #<Product id: 1, name: "Television", description: "This is LED TV", price: 14000.0, created_at: "2020-05-12 07:51:25", updated_at: "2020-05-12 07:51:25">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Product::ActiveRecord_Relation (1.15ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2020-05-13 11:13:39 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+No serializer found for resource: #<Product id: 1, name: "Television", description: "This is LED TV", price: 14000.0, created_at: "2020-05-12 07:51:25", updated_at: "2020-05-12 07:51:25">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Product::ActiveRecord_Relation (1.54ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2020-05-13 11:14:03 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}, "id"=>"1"}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5
+[active_model_serializers] Rendered ProductsSerializer with Product (0.23ms)
+Completed 200 OK in 26ms (Views: 0.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products/1" for 127.0.0.1 at 2020-05-13 11:14:40 +0530
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}, "id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:5
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 19ms (Views: 1.2ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2020-05-13 11:14:44 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.36ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2020-05-13 15:18:04 +0530
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (5.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.75ms)
+Completed 200 OK in 96ms (Views: 45.2ms | ActiveRecord: 18.1ms)
+
+
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (29.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5043.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (171.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (5277.7ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-13 10:54:31.899003"], ["updated_at", "2020-05-13 10:54:31.899003"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/products" for ::1 at 2020-05-13 16:24:51 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 54ms (Views: 40.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/products" for ::1 at 2020-05-13 16:24:58 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 10:54:58.128844"], ["updated_at", "2020-05-13 10:54:58.128844"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.81ms)
+Completed 200 OK in 19ms (Views: 1.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-13 16:25:08 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.42ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5044.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5041.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5040.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5042.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (143.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (1350.4ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-13 11:01:07.773162"], ["updated_at", "2020-05-13 11:01:07.773162"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (5041.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (152.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (1450.2ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-13 11:22:37.126527"], ["updated_at", "2020-05-13 11:22:37.126527"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/products" for ::1 at 2020-05-13 16:53:15 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (1.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 11:23:15.167082"], ["updated_at", "2020-05-13 11:23:15.167082"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 29ms (Views: 6.5ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/products" for ::1 at 2020-05-13 16:53:32 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (142.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (523.3ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSchema (2020)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-13 11:48:41.086075"], ["updated_at", "2020-05-13 11:48:41.086075"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (143.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "product_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (466.0ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (479.2ms)[0m  [1m[35mCREATE DATABASE "product_api_test" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20200508051149)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" bigserial primary key, "name" character varying, "description" text, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200508051149_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508051149"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-13 12:03:12.957943"], ["updated_at", "2020-05-13 12:03:12.957943"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/products" for ::1 at 2020-05-13 17:42:02 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/products" for ::1 at 2020-05-13 17:42:08 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 12:12:08.443334"], ["updated_at", "2020-05-13 12:12:08.443334"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 14ms (Views: 0.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/products" for ::1 at 2020-05-13 17:42:12 +0530
+Processing by ProductsController#index as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>12, "description"=>"This is a funky charger"}}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:18
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.59ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for ::1 at 2020-05-13 18:04:47 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>"12", "description"=>"This is a funky charger"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "charger"], ["description", "This is a funky charger"], ["price", 12.0], ["created_at", "2020-05-13 12:34:47.204657"], ["updated_at", "2020-05-13 12:34:47.204657"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.87ms)
+Completed 200 OK in 30ms (Views: 5.7ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/products" for ::1 at 2020-05-13 18:04:58 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"charger", "price"=>"1a2", "description"=>"This is a funky charger"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
