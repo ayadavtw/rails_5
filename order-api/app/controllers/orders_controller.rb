@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
     @order= Order.new(order_params)
     @order.user = current_user
     if @order.save
+      SignupMailer.signup_email(current_user).deliver
       render json: @order , serializer: OrdersSerializer
     else
       render json: {errors: @order.errors}
