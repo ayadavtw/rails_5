@@ -1759,8 +1759,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: order-api">
     <configuration name="Development: order-api" type="RailsRunConfigurationType" factoryName="Rails">
@@ -1889,58 +1894,62 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589434137329">
+    <state x="395" y="235" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589445679517">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="395" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.807@0.23.1440.807" timestamp="1589434137329" />
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom" timestamp="1589433418355">
+    <state x="395" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.807@0.23.1440.807" timestamp="1589445679517" />
+    <state x="483" y="137" key="#xdebugger.evaluate" timestamp="1589445592735">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589433418355" />
-    <state width="1398" height="258" key="GridCell.Tab.0.center" timestamp="1589433418355">
+    <state x="483" y="137" key="#xdebugger.evaluate/0.23.1440.807@0.23.1440.807" timestamp="1589445592735" />
+    <state width="1398" height="258" key="GridCell.Tab.0.bottom" timestamp="1589445994090">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1589433418355" />
-    <state width="1398" height="258" key="GridCell.Tab.0.left" timestamp="1589433418354">
+    <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589445994090" />
+    <state width="1398" height="258" key="GridCell.Tab.0.center" timestamp="1589445994090">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1589433418354" />
-    <state width="1398" height="258" key="GridCell.Tab.0.right" timestamp="1589433418355">
+    <state width="1398" height="258" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1589445994090" />
+    <state width="1398" height="258" key="GridCell.Tab.0.left" timestamp="1589445994089">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1589433418355" />
-    <state width="1398" height="258" key="GridCell.Tab.1.bottom" timestamp="1589433418357">
+    <state width="1398" height="258" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1589445994089" />
+    <state width="1398" height="258" key="GridCell.Tab.0.right" timestamp="1589445994090">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.1.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589433418357" />
-    <state width="1398" height="258" key="GridCell.Tab.1.center" timestamp="1589433418356">
+    <state width="1398" height="258" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1589445994090" />
+    <state width="1398" height="258" key="GridCell.Tab.1.bottom" timestamp="1589445994092">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.1.center/0.23.1440.807@0.23.1440.807" timestamp="1589433418356" />
-    <state width="1398" height="258" key="GridCell.Tab.1.left" timestamp="1589433418356">
+    <state width="1398" height="258" key="GridCell.Tab.1.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589445994092" />
+    <state width="1398" height="258" key="GridCell.Tab.1.center" timestamp="1589445994091">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.1.left/0.23.1440.807@0.23.1440.807" timestamp="1589433418356" />
-    <state width="1398" height="258" key="GridCell.Tab.1.right" timestamp="1589433418356">
+    <state width="1398" height="258" key="GridCell.Tab.1.center/0.23.1440.807@0.23.1440.807" timestamp="1589445994091" />
+    <state width="1398" height="258" key="GridCell.Tab.1.left" timestamp="1589445994091">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.1.right/0.23.1440.807@0.23.1440.807" timestamp="1589433418356" />
-    <state width="1398" height="258" key="GridCell.Tab.2.bottom" timestamp="1589433418358">
+    <state width="1398" height="258" key="GridCell.Tab.1.left/0.23.1440.807@0.23.1440.807" timestamp="1589445994091" />
+    <state width="1398" height="258" key="GridCell.Tab.1.right" timestamp="1589445994091">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.2.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589433418358" />
-    <state width="1398" height="258" key="GridCell.Tab.2.center" timestamp="1589433418357">
+    <state width="1398" height="258" key="GridCell.Tab.1.right/0.23.1440.807@0.23.1440.807" timestamp="1589445994091" />
+    <state width="1398" height="258" key="GridCell.Tab.2.bottom" timestamp="1589445994093">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.2.center/0.23.1440.807@0.23.1440.807" timestamp="1589433418357" />
-    <state width="1398" height="258" key="GridCell.Tab.2.left" timestamp="1589433418357">
+    <state width="1398" height="258" key="GridCell.Tab.2.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589445994093" />
+    <state width="1398" height="258" key="GridCell.Tab.2.center" timestamp="1589445994092">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.2.left/0.23.1440.807@0.23.1440.807" timestamp="1589433418357" />
-    <state width="1398" height="258" key="GridCell.Tab.2.right" timestamp="1589433418357">
+    <state width="1398" height="258" key="GridCell.Tab.2.center/0.23.1440.807@0.23.1440.807" timestamp="1589445994092" />
+    <state width="1398" height="258" key="GridCell.Tab.2.left" timestamp="1589445994092">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.2.right/0.23.1440.807@0.23.1440.807" timestamp="1589433418357" />
+    <state width="1398" height="258" key="GridCell.Tab.2.left/0.23.1440.807@0.23.1440.807" timestamp="1589445994092" />
+    <state width="1398" height="258" key="GridCell.Tab.2.right" timestamp="1589445994092">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state width="1398" height="258" key="GridCell.Tab.2.right/0.23.1440.807@0.23.1440.807" timestamp="1589445994092" />
     <state x="229" y="65" key="SettingsEditor" timestamp="1589394961053">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
@@ -1953,38 +1962,14 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="421" y="181" width="598" height="490" key="find.popup/0.23.1440.807@0.23.1440.807" timestamp="1589397357736" />
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1589439905377">
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1589444361542">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1589439905377" />
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1589444361542" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>4</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>8</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
-          <line>1</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/registrations_controller.rb</url>
           <line>1</line>
@@ -1993,10 +1978,18 @@
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/orders_controller.rb</url>
+          <line>4</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/order_api@Development__order_api.rcov" NAME="Development: order-api Coverage Results" MODIFIED="1589430436097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="order-api" />
+    <SUITE FILE_PATH="coverage/order_api@Development__order_api.rcov" NAME="Development: order-api Coverage Results" MODIFIED="1589445955221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="order-api" />
   </component>
 </project>
