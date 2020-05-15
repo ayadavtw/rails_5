@@ -19,5 +19,5 @@
 
 # Learn more: http://github.com/javan/whenever
 every 1.minute do
-  command "echo '############### awsome atul #########################'"
+  rake 'send_birthday_email', :environment => 'development'
 end

@@ -672,3 +672,503 @@ SignupMailer#signup_email: processed outbound mail in 14.5ms
 Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mUser Load (39.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:8
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (2.6ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 124.5ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:8
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.7ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 19.6ms
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.7ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 50.6ms
+  [1m[35m (33.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ lib/tasks/email_tasks.rake:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ lib/tasks/email_tasks.rake:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (1.3ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.4ms)
+SignupMailer#signup_email: processed outbound mail in 471.3ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.5ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 18.9ms
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8212160474501450355)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (25.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to AddDobToUsers (20200515171434)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (82.0ms)[0m  [1m[35mALTER TABLE "users" ADD "dob" timestamp[0m
+  ↳ db/migrate/20200515171434_add_dob_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200515171434"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (31.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8212160474501450355)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started POST "/signup" for ::1 at 2020-05-15 22:54:44 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined method `before_filter' for RegistrationsController:Class
+Did you mean?  before_action):
+  
+app/controllers/registrations_controller.rb:2:in `<class:RegistrationsController>'
+app/controllers/registrations_controller.rb:1:in `<main>'
+Started POST "/signup" for ::1 at 2020-05-15 22:55:45 +0530
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"kavita", "email"=>"kavitamaa@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "registration"=>{"user"=>{"username"=>"kavita", "email"=>"kavitamaa@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "kavitamaa@thoughtworks.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (35.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "kavitamaa@thoughtworks.com"], ["encrypted_password", "$2a$11$TJ/ubIrSxk/OlidOmVsXK.6CSaD4yvylypigejX1lGkSbyobahDPq"], ["created_at", "2020-05-15 17:25:45.597947"], ["updated_at", "2020-05-15 17:25:45.597947"], ["username", "kavita"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.33ms)
+Completed 201 Created in 225ms (Views: 16.6ms | ActiveRecord: 47.2ms)
+
+
+Started POST "/signup" for ::1 at 2020-05-15 22:57:42 +0530
+Processing by RegistrationsController#create as JSON
+  Parameters: {"email"=>"aa@bb.com", "username"=>"aa", "password"=>"[FILTERED]", "password_confirm"=>"[FILTERED]", "dob"=>"2002-05-15T17:25:45.597Z"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 23ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/signup" for ::1 at 2020-05-15 22:58:28 +0530
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"aa", "email"=>"aa@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"2002-05-15T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"aa", "email"=>"aa@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"2002-05-15T17:25:45.597Z"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@thoughtworks.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "aa@thoughtworks.com"], ["encrypted_password", "$2a$11$ystfYG9pd6ccqKEuBfeII.W5o4Fd7nhbdfS/ky69GFU9yuaFnglvW"], ["created_at", "2020-05-15 17:28:28.877330"], ["updated_at", "2020-05-15 17:28:28.877330"], ["username", "aa"], ["dob", "2002-05-15 17:25:45.597000"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.2ms)
+Completed 201 Created in 125ms (Views: 0.6ms | ActiveRecord: 2.1ms)
+
+
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (2.5ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 95.9ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.5ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 18.9ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.5ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 18.8ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.5ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 19.0ms
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.6ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 19.1ms
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (227.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "order_api"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (157.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "order_api_test"[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5577.7ms)[0m  [1m[35mCREATE DATABASE "order_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1338.0ms)[0m  [1m[35mCREATE DATABASE "order_api_test" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8212160474501450355)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateUsers (20200513191114)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200513191114_devise_create_users.rb:5
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200513191114_devise_create_users.rb:39
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20200513191114_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200513191114"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateJwtBlacklists (20200513192119)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "jwt_blacklists" ("id" bigserial primary key, "jti" character varying, "exp" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200513192119_create_jwt_blacklists.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_jwt_blacklists_on_jti" ON "jwt_blacklists"  ("jti")[0m
+  ↳ db/migrate/20200513192119_create_jwt_blacklists.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200513192119"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to AddUsernameToUsers (20200514071337)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  ↳ db/migrate/20200514071337_add_username_to_users.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_username" ON "users"  ("username")[0m
+  ↳ db/migrate/20200514071337_add_username_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200514071337"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateOrders (20200514081546)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "orders" ("id" bigserial primary key, "product" integer, "price" integer, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_f868b47f6a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200514081546_create_orders.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_orders_on_user_id" ON "orders"  ("user_id")[0m
+  ↳ db/migrate/20200514081546_create_orders.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200514081546"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to AddDobToUsers (20200515171434)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "dob" timestamp[0m
+  ↳ db/migrate/20200515171434_add_dob_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200515171434"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-15 17:50:11.667197"], ["updated_at", "2020-05-15 17:50:11.667197"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8212160474501450355)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+Started POST "/signup" for ::1 at 2020-05-15 23:38:55 +0530
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"atul", "email"=>"ayadav@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-15T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"atul", "email"=>"ayadav@thoughtworks.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-15T17:25:45.597Z"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ayadav@thoughtworks.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "ayadav@thoughtworks.com"], ["encrypted_password", "$2a$11$3.gpqPrIdaflNabIzShfQuzoHm.K9JUq90cJ1icdn5rWhfwlK.VZW"], ["created_at", "2020-05-15 18:08:56.138859"], ["updated_at", "2020-05-15 18:08:56.138859"], ["username", "atul"], ["dob", "1985-05-15 17:25:45.597000"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.47ms)
+Completed 201 Created in 165ms (Views: 15.0ms | ActiveRecord: 11.5ms)
+
+
+  [1m[36mUser Load (25.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.5ms)
+BirthdayMailer#birthday_email: processed outbound mail in 42.7ms
+Started GET "/rails/mailers/" for ::1 at 2020-05-15 23:45:55 +0530
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::MailersController#index as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/mailers/index.html.erb within layouts/application
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/mailers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 70ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/mailers/birthday_mailer/birthday_mail_preview" for ::1 at 2020-05-15 23:45:58 +0530
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"birthday_mailer/birthday_mail_preview"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ spec/mailers/previews/birthday_mailer_preview.rb:4
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.3ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 30.0ms
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/mailers/email.html.erb (2.5ms)
+Completed 200 OK in 83ms (Views: 10.6ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/rails/mailers/birthday_mailer/birthday_mail_preview?part=text%2Fhtml" for ::1 at 2020-05-15 23:45:58 +0530
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/html", "path"=>"birthday_mailer/birthday_mail_preview"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ spec/mailers/previews/birthday_mailer_preview.rb:4
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.3ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.8ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/birthday_mailer/birthday_mail_preview?part=text%2Fplain" for ::1 at 2020-05-15 23:46:04 +0530
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"part"=>"text/plain", "path"=>"birthday_mailer/birthday_mail_preview"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ spec/mailers/previews/birthday_mailer_preview.rb:4
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.6ms)
+BirthdayMailer#birthday_email: processed outbound mail in 14.6ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/mailers/birthday_mailer/birthday_mail_preview.txt?part=text%2Fhtml" for ::1 at 2020-05-15 23:46:07 +0530
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/html", "path"=>"birthday_mailer/birthday_mail_preview"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ spec/mailers/previews/birthday_mailer_preview.rb:4
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.3ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.7ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.1ms
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.0ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.8ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.3ms
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.9ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.2ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.4ms
+Started POST "/signup" for ::1 at 2020-05-15 23:59:00 +0530
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "atulyadav.iit@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "atulyadav.iit@gmail.com"], ["encrypted_password", "$2a$11$QFnKHL6SdhzJXGrYc52XtOC32vZ34G5Eu8/CIXIF26kP/Kq8iOvQe"], ["created_at", "2020-05-15 18:29:00.962345"], ["updated_at", "2020-05-15 18:29:00.962345"], ["username", "Atul Yadav"], ["dob", "1985-05-16 17:25:45.597000"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.7ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 29.8ms
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.4ms
+Sent mail to atulyadav.iit@gmail.com (3717.8ms)
+Date: Fri, 15 May 2020 23:59:01 +0530
+From: no-reply@localhost.com
+To: atulyadav.iit@gmail.com
+Message-ID: <5ebedf6d14ab5_13a0929f44642a@INayadav.local.mail>
+Subject: Signup Email
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ebedf6d13aa1_13a0929f44639d";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ebedf6d13aa1_13a0929f44639d
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome Atul Yadav<
+Thanks for registering with TW shopping !!!
+Please make some order.
+
+----==_mimepart_5ebedf6d13aa1_13a0929f44639d
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Welcome Atul Yadav</h1>
+<p>
+  Thanks for registering with TW shopping !!!
+</p>
+<p>Please make some order.</p>
+</body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_5ebedf6d13aa1_13a0929f44639d--
+
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.35ms)
+Completed 201 Created in 4016ms (Views: 23.0ms | ActiveRecord: 14.2ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.6ms

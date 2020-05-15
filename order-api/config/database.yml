@@ -7,8 +7,7 @@
 default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  database: order_api
+  timeout: 50000
 development:
   <<: *default
   database: order_api
