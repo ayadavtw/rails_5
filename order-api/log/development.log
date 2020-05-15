@@ -1172,3 +1172,774 @@ Completed 201 Created in 4016ms (Views: 23.0ms | ActiveRecord: 14.2ms)
   Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
   Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
 BirthdayMailer#birthday_email: processed outbound mail in 21.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.9ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.2ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.8ms
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 22.5ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.5ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.9ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.2ms
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.3ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.8ms
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.0ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.5ms
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.3ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.1ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.3ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.7ms
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.7ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.7ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 18.9ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 18.6ms
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.7ms
+Started POST "/signup" for ::1 at 2020-05-16 00:21:00 +0530
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "atulyadav.iitr@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "atulyadav.iitr@gmail.com"], ["encrypted_password", "$2a$11$7.qP1UUzfW48erQTIG3c2OktoNq1BCMS3/aszk2gpx1AP3SrGA1jO"], ["created_at", "2020-05-15 18:51:00.768582"], ["updated_at", "2020-05-15 18:51:00.768582"], ["username", "Atul Yadav"], ["dob", "1985-05-16 17:25:45.597000"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 12.7ms)
+
+
+  
+ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  duplicate key value violates unique constraint "index_users_on_username"
+DETAIL:  Key (username)=(Atul Yadav) already exists.
+: INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"):
+  
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:611:in `exec_params'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:611:in `block (2 levels) in exec_no_cache'
+activesupport (5.2.4.2) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (5.2.4.2) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (5.2.4.2) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:610:in `block in exec_no_cache'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:581:in `block (2 levels) in log'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:580:in `synchronize'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:580:in `block in log'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract_adapter.rb:571:in `log'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:609:in `exec_no_cache'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:598:in `execute_and_clear'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:81:in `exec_query'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:115:in `exec_insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:187:in `_insert_record'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:734:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/counter_cache.rb:184:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/locking/optimistic.rb:70:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:346:in `block in _create_record'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:346:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/timestamp.rb:102:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:705:in `create_or_update'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:342:in `block in create_or_update'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:342:in `create_or_update'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:275:in `save'
+activerecord (5.2.4.2) lib/active_record/validations.rb:46:in `save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:310:in `block (2 levels) in save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `synchronize'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:310:in `block in save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:325:in `rollback_active_record_state!'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:309:in `save'
+activerecord (5.2.4.2) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:134:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden-jwt_auth (0.4.2) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.4.2) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.2) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.4.2) lib/warden/jwt_auth/middleware.rb:23:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.1ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.2ms
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 23.1ms
+Started POST "/signup" for ::1 at 2020-05-16 00:23:13 +0530
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"Atul Yadav", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Atul Yadav"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "atulyadav.iitr@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 149ms (Views: 5.4ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/signup" for ::1 at 2020-05-16 00:23:22 +0530
+Processing by RegistrationsController#create as JSON
+  Parameters: {"user"=>{"username"=>"Atul", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}, "registration"=>{"user"=>{"username"=>"Atul", "email"=>"atulyadav.iitr@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "dob"=>"1985-05-16T17:25:45.597Z"}}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Atul"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "atulyadav.iitr@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "username", "dob") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "atulyadav.iitr@gmail.com"], ["encrypted_password", "$2a$11$U32nHXGQydJLPGKahJDIeOsbksxoCtKBSmFCth/UOQ2WIah/cp5GK"], ["created_at", "2020-05-15 18:53:22.544467"], ["updated_at", "2020-05-15 18:53:22.544467"], ["username", "Atul"], ["dob", "1985-05-16 17:25:45.597000"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+  Rendering signup_mailer/signup_email.html.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.html.erb within layouts/mailer (0.9ms)
+  Rendering signup_mailer/signup_email.text.erb within layouts/mailer
+  Rendered signup_mailer/signup_email.text.erb within layouts/mailer (0.2ms)
+SignupMailer#signup_email: processed outbound mail in 26.0ms
+Sent mail to atulyadav.iitr@gmail.com (3645.7ms)
+Date: Sat, 16 May 2020 00:23:22 +0530
+From: no-reply@localhost.com
+To: atulyadav.iitr@gmail.com
+Message-ID: <5ebee5229c984_15757480875058@INayadav.local.mail>
+Subject: Signup Email
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ebee5229be19_157574808749ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ebee5229be19_157574808749ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Welcome Atul<
+Thanks for registering with TW shopping !!!
+Please make some order.
+
+----==_mimepart_5ebee5229be19_157574808749ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Welcome Atul</h1>
+<p>
+  Thanks for registering with TW shopping !!!
+</p>
+<p>Please make some order.</p>
+</body>
+</html>
+  </body>
+</html>
+
+----==_mimepart_5ebee5229be19_157574808749ad--
+
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/controllers/devise/registrations_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.3ms)
+Completed 201 Created in 3866ms (Views: 4.4ms | ActiveRecord: 3.0ms)
+
+
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 23.9ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.7ms
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.2ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.6ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 8.9ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.7ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.2ms
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.0ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 21.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 70.5ms
+Started POST "/login" for 127.0.0.1 at 2020-05-16 00:30:41 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "atulyadav.iit@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:22
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.49ms)
+Completed 200 OK in 162ms (Views: 8.9ms | ActiveRecord: 8.6ms)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 26.6ms
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:31:04 +0530
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"8", "price"=>20000}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[36mJwtBlacklist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "jwt_blacklists" WHERE "jwt_blacklists"."jti" = $1 LIMIT $2[0m  [["jti", "8dee2404-803c-4c4b-b901-49cad27a3d70"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.4ms
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 24.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.1ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 29.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.6ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 33.5ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 13.1ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 23.9ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 8.2ms
+Completed 500 Internal Server Error in 295612ms (ActiveRecord: 2.6ms)
+
+
+  
+NameError (uninitialized constant OrdersController::HTTParty):
+  
+app/controllers/orders_controller.rb:5:in `create'
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 25.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.5ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 24.9ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 8.2ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.7ms
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:38:36 +0530
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"8", "price"=>20000}}
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-16 00:38:44 +0530
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "atulyadav.iit@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:22
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.46ms)
+Completed 200 OK in 146ms (Views: 6.6ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:38:55 +0530
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"8", "price"=>20000}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[36mJwtBlacklist Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM "jwt_blacklists" WHERE "jwt_blacklists"."jti" = $1 LIMIT $2[0m  [["jti", "d734b0fe-11c5-493c-90a0-f15069fe79ef"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[36mUser Load (14.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 35.9ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.2ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 41.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.9ms
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.4ms)
+BirthdayMailer#birthday_email: processed outbound mail in 43.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 9.0ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 44.1ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.7ms
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.5ms)
+BirthdayMailer#birthday_email: processed outbound mail in 44.3ms
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:8
+  [1m[36mOrder Create (6.0ms)[0m  [1m[32mINSERT INTO "orders" ("product", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["product", 8], ["price", 20000], ["user_id", 2], ["created_at", "2020-05-15 19:13:04.649152"], ["updated_at", "2020-05-15 19:13:04.649152"]]
+  ↳ app/controllers/orders_controller.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:8
+[active_model_serializers] Rendered OrdersSerializer with ActiveModelSerializers::Adapter::Attributes (0.64ms)
+Completed 200 OK in 249197ms (Views: 37.9ms | ActiveRecord: 18.7ms)
+
+
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.8ms
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:43:15 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"8", "price"=>20000}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[36mJwtBlacklist Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "jwt_blacklists" WHERE "jwt_blacklists"."jti" = $1 LIMIT $2[0m  [["jti", "d734b0fe-11c5-493c-90a0-f15069fe79ef"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:9
+  [1m[36mOrder Create (1.9ms)[0m  [1m[32mINSERT INTO "orders" ("product", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["product", 8], ["price", 120000], ["user_id", 2], ["created_at", "2020-05-15 19:13:58.765530"], ["updated_at", "2020-05-15 19:13:58.765530"]]
+  ↳ app/controllers/orders_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:9
+[active_model_serializers] Rendered OrdersSerializer with ActiveModelSerializers::Adapter::Attributes (1.53ms)
+Completed 200 OK in 47076ms (Views: 26.3ms | ActiveRecord: 26.8ms)
+
+
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 44.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 44.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.3ms
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:45:18 +0530
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"3"}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2020-05-16 00:45:23 +0530
+Processing by SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"atulyadav.iit@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "atulyadav.iit@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:22
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.4ms)
+Completed 200 OK in 145ms (Views: 8.2ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2020-05-16 00:45:40 +0530
+Processing by OrdersController#create as JSON
+  Parameters: {"order"=>{"product"=>"3"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[36mJwtBlacklist Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "jwt_blacklists" WHERE "jwt_blacklists"."jti" = $1 LIMIT $2[0m  [["jti", "3fa02aa9-1474-474f-a430-a375290aed8d"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/warden-1.2.8/lib/warden/strategies/base.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:9
+  [1m[36mOrder Create (0.9ms)[0m  [1m[32mINSERT INTO "orders" ("product", "price", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["product", 3], ["price", 14000], ["user_id", 2], ["created_at", "2020-05-15 19:15:43.184289"], ["updated_at", "2020-05-15 19:15:43.184289"]]
+  ↳ app/controllers/orders_controller.rb:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:9
+[active_model_serializers] Rendered OrdersSerializer with ActiveModelSerializers::Adapter::Attributes (1.36ms)
+Completed 200 OK in 2922ms (Views: 1.9ms | ActiveRecord: 12.9ms)
+
+
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 41.1ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.0ms
