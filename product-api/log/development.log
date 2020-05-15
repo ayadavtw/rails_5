@@ -1907,3 +1907,490 @@ Processing by ProductsController#create as JSON
 Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "product_api_test" ENCODING = 'utf8'[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (35.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateActiveStorageTables (20200514182059)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (295.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200514182059_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200514182059_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (37.0ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200514182059_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200514182059_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200514182059_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200514182059"]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (24.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/rails/info/routes" for ::1 at 2020-05-15 00:03:48 +0530
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [12 times] (8.5ms)
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/actionpack-5.2.4.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.7ms)
+  Rendered /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/railties-5.2.4.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 73ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-15 00:09:58 +0530
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV", "avatar"=>"@fridge.jpg"}}
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 9.2ms)
+
+
+  
+ActiveSupport::MessageVerifier::InvalidSignature (ActiveSupport::MessageVerifier::InvalidSignature):
+  
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:10:54 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (26.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Television"], ["description", "This is LED TV"], ["price", 14000.0], ["created_at", "2020-05-14 18:40:54.190383"], ["updated_at", "2020-05-14 18:40:54.190383"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 94ms (Views: 11.2ms | ActiveRecord: 27.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-15 00:11:11 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"Television", "price"=>14000, "description"=>"This is LED TV", "avatar"=>"fridge.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveSupport::MessageVerifier::InvalidSignature (ActiveSupport::MessageVerifier::InvalidSignature):
+  
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:14:22 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"products"=>{"name"=>"Fridge"}, "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc3195c8648 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-kga200.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: product):
+  
+app/controllers/products_controller.rb:23:in `product_params'
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:15:04 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"Fridge"}, "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc31c020080 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-1h7mewd.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 200 OK in 25ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/products" for ::1 at 2020-05-15 00:16:03 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"Fridge", "price"=>"100000", "description"=>"awsome fridge"}, "user"=>{"avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc31a937df0 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-m8vzod.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.8ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fridge"], ["description", "awsome fridge"], ["price", 100000.0], ["created_at", "2020-05-14 18:46:03.832098"], ["updated_at", "2020-05-14 18:46:03.832098"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 1.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started POST "/products" for ::1 at 2020-05-15 00:17:54 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"Fridge", "price"=>"100000", "description"=>"awsome fridge", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc31abfab50 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-13fayz8.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[36m  Disk Storage (1.9ms) [0m[32mUploaded file to key: nD9VxNwf9mCXsXdGJGkLs8Sa (checksum: PIu0AknIvgnLAKxXXKGN8Q==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mActiveStorage::Blob Create (1.1ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "nD9VxNwf9mCXsXdGJGkLs8Sa"], ["filename", "fridge.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 158502], ["checksum", "PIu0AknIvgnLAKxXXKGN8Q=="], ["created_at", "2020-05-14 18:47:54.161601"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fridge"], ["description", "awsome fridge"], ["price", 100000.0], ["created_at", "2020-05-14 18:47:54.182444"], ["updated_at", "2020-05-14 18:47:54.182444"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mActiveStorage::Attachment Create (1.6ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Product"], ["record_id", 5], ["blob_id", 1], ["created_at", "2020-05-14 18:47:54.183924"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Update (1.1ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2020-05-14 18:47:54.186176"], ["id", 5]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 95f92adf-e9f5-4d78-af7c-9c48c2e85b43) to Async(default) with arguments: #<GlobalID:0x00007fc31aac5d20 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/1>>
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 210ms (Views: 0.7ms | ActiveRecord: 18.9ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43] Performing ActiveStorage::AnalyzeJob (Job ID: 95f92adf-e9f5-4d78-af7c-9c48c2e85b43) from Async(default) with arguments: #<GlobalID:0x00007fc31a5efd78 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43] [36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: nD9VxNwf9mCXsXdGJGkLs8Sa[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   [1m[36mActiveStorage::Blob Update (2.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [95f92adf-e9f5-4d78-af7c-9c48c2e85b43] Performed ActiveStorage::AnalyzeJob (Job ID: 95f92adf-e9f5-4d78-af7c-9c48c2e85b43) from Async(default) in 14.84ms
+Started GET "/products/5/avatar" for ::1 at 2020-05-15 00:19:48 +0530
+  
+AbstractController::ActionNotFound (The action 'avatar' could not be found for ProductsController):
+  
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products/5/avatar" for ::1 at 2020-05-15 00:23:31 +0530
+Processing by ProductsController#avatar as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "Product"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+Redirected to http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9cad6fef4fa70e872db72a378b5348c939dd66ec/fridge.jpg
+Completed 302 Found in 62ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9cad6fef4fa70e872db72a378b5348c939dd66ec/fridge.jpg" for ::1 at 2020-05-15 00:23:31 +0530
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9cad6fef4fa70e872db72a378b5348c939dd66ec", "filename"=>"fridge"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.1ms) [0m[34mGenerated URL for file at key: nD9VxNwf9mCXsXdGJGkLs8Sa (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRia1E1Vm5oT2QyWTViVU5ZYzFoa1IwcEhhMHh6T0ZOaEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabkpwWkdkbExtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWm5KcFpHZGxMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wNS0xNFQxODo1ODozMS4yODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--b54c2d0268fff884048f8f003d5cfe742b350b2e/fridge.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22fridge.jpg%22%3B+filename%2A%3DUTF-8%27%27fridge.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRia1E1Vm5oT2QyWTViVU5ZYzFoa1IwcEhhMHh6T0ZOaEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabkpwWkdkbExtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWm5KcFpHZGxMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wNS0xNFQxODo1ODozMS4yODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--b54c2d0268fff884048f8f003d5cfe742b350b2e/fridge.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22fridge.jpg%22%3B+filename%2A%3DUTF-8%27%27fridge.jpg
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRia1E1Vm5oT2QyWTViVU5ZYzFoa1IwcEhhMHh6T0ZOaEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabkpwWkdkbExtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWm5KcFpHZGxMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wNS0xNFQxODo1ODozMS4yODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--b54c2d0268fff884048f8f003d5cfe742b350b2e/fridge.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22fridge.jpg%22%3B+filename%2A%3DUTF-8%27%27fridge.jpg" for ::1 at 2020-05-15 00:23:31 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"fridge.jpg\"; filename*=UTF-8''fridge.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRia1E1Vm5oT2QyWTViVU5ZYzFoa1IwcEhhMHh6T0ZOaEJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSS9hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlabkpwWkdkbExtcHdaeUk3SUdacGJHVnVZVzFsS2oxVlZFWXRPQ2NuWm5KcFpHZGxMbXB3WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraUQybHRZV2RsTDJwd1pXY0dPd1pVIiwiZXhwIjoiMjAyMC0wNS0xNFQxODo1ODozMS4yODZaIiwicHVyIjoiYmxvYl9rZXkifX0=--b54c2d0268fff884048f8f003d5cfe742b350b2e", "filename"=>"fridge"}
+Completed 200 OK in 29ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-15 00:27:25 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black", "avatar"=>"@fridge.jpg"}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveSupport::MessageVerifier::InvalidSignature (ActiveSupport::MessageVerifier::InvalidSignature):
+  
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:27:57 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black", "avatar"=>"@fridge.jpg"}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveSupport::MessageVerifier::InvalidSignature (ActiveSupport::MessageVerifier::InvalidSignature):
+  
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:33:36 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"Fridge", "price"=>"100000", "description"=>"awsome fridge", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc318c79d30 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-j2w0je.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Product::ActiveStorageSupport):
+  
+app/models/product.rb:3:in `<class:Product>'
+app/models/product.rb:2:in `<main>'
+app/controllers/products_controller.rb:9:in `create'
+Started POST "/products" for ::1 at 2020-05-15 00:35:04 +0530
+Processing by ProductsController#create as */*
+  Parameters: {"product"=>{"name"=>"Fridge", "price"=>"100000", "description"=>"awsome fridge", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc31a394da8 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-1ni8nxh.jpg>, @original_filename="fridge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"fridge.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[36m  Disk Storage (1.7ms) [0m[32mUploaded file to key: f6Vu3R6v2XQoRFuPxuYbnKH1 (checksum: PIu0AknIvgnLAKxXXKGN8Q==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mActiveStorage::Blob Create (1.2ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "f6Vu3R6v2XQoRFuPxuYbnKH1"], ["filename", "fridge.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 158502], ["checksum", "PIu0AknIvgnLAKxXXKGN8Q=="], ["created_at", "2020-05-14 19:05:04.891350"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Fridge"], ["description", "awsome fridge"], ["price", 100000.0], ["created_at", "2020-05-14 19:05:04.904832"], ["updated_at", "2020-05-14 19:05:04.904832"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mActiveStorage::Attachment Create (0.8ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Product"], ["record_id", 6], ["blob_id", 2], ["created_at", "2020-05-14 19:05:04.906082"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2020-05-14 19:05:04.907494"], ["id", 6]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 8fa95e8a-2948-4f0b-bd4c-aab00b93b35f) to Async(default) with arguments: #<GlobalID:0x00007fc31abd2858 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/2>>
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 70ms (Views: 0.7ms | ActiveRecord: 29.3ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f] Performing ActiveStorage::AnalyzeJob (Job ID: 8fa95e8a-2948-4f0b-bd4c-aab00b93b35f) from Async(default) with arguments: #<GlobalID:0x00007fc319596c60 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: f6Vu3R6v2XQoRFuPxuYbnKH1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 2]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [8fa95e8a-2948-4f0b-bd4c-aab00b93b35f] Performed ActiveStorage::AnalyzeJob (Job ID: 8fa95e8a-2948-4f0b-bd4c-aab00b93b35f) from Async(default) in 14.56ms
+Started POST "/products" for ::1 at 2020-05-15 00:35:43 +0530
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc31951c988 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-65137-51v6cv.jpg>, @original_filename="maxresdefault.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"maxresdefault.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[36m  Disk Storage (1.6ms) [0m[32mUploaded file to key: cpJvJfDMjFy3vrsL9CkiJWJM (checksum: Q7XuDTIR/qAG6em5wYnhmQ==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mActiveStorage::Blob Create (0.3ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "cpJvJfDMjFy3vrsL9CkiJWJM"], ["filename", "maxresdefault.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 133679], ["checksum", "Q7XuDTIR/qAG6em5wYnhmQ=="], ["created_at", "2020-05-14 19:05:43.318553"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "FridgeBlack"], ["description", "awsome fridge black"], ["price", 120000.0], ["created_at", "2020-05-14 19:05:43.327481"], ["updated_at", "2020-05-14 19:05:43.327481"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Product"], ["record_id", 7], ["blob_id", 3], ["created_at", "2020-05-14 19:05:43.328986"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Update (0.3ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2020-05-14 19:05:43.330139"], ["id", 7]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 81cbf70a-98c6-44de-a2eb-4f5eaf1b3471) to Async(default) with arguments: #<GlobalID:0x00007fc31b084860 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/3>>
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 37ms (Views: 0.8ms | ActiveRecord: 9.5ms)
+
+
+  [1m[36mActiveStorage::Blob Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471] Performing ActiveStorage::AnalyzeJob (Job ID: 81cbf70a-98c6-44de-a2eb-4f5eaf1b3471) from Async(default) with arguments: #<GlobalID:0x00007fc31aac7e40 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471] [36m  Disk Storage (0.6ms) [0m[34mDownloaded file from key: cpJvJfDMjFy3vrsL9CkiJWJM[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   [1m[36mActiveStorage::Blob Update (1.2ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 3]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [81cbf70a-98c6-44de-a2eb-4f5eaf1b3471] Performed ActiveStorage::AnalyzeJob (Job ID: 81cbf70a-98c6-44de-a2eb-4f5eaf1b3471) from Async(default) in 10.87ms
+Started GET "/products/7/avatar" for ::1 at 2020-05-15 00:36:52 +0530
+Processing by ProductsController#avatar as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "Product"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+Redirected to http://localhost:3000/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34f8ae93bfe6149af7768301281aa5931f6a1dbc/maxresdefault.jpg
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34f8ae93bfe6149af7768301281aa5931f6a1dbc/maxresdefault.jpg" for ::1 at 2020-05-15 00:36:52 +0530
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--34f8ae93bfe6149af7768301281aa5931f6a1dbc", "filename"=>"maxresdefault"}
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (1.0ms) [0m[34mGenerated URL for file at key: cpJvJfDMjFy3vrsL9CkiJWJM (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZM0JLZGtwbVJFMXFSbmt6ZG5KelREbERhMmxLVjBwTkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGliV0Y0Y21WelpHVm1ZWFZzZEM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMjFoZUhKbGMyUmxabUYxYkhRdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA1LTE0VDE5OjExOjUyLjQ2OVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fb9e880540b8e59270240dbf616d57e63038798a/maxresdefault.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22maxresdefault.jpg%22%3B+filename%2A%3DUTF-8%27%27maxresdefault.jpg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZM0JLZGtwbVJFMXFSbmt6ZG5KelREbERhMmxLVjBwTkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGliV0Y0Y21WelpHVm1ZWFZzZEM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMjFoZUhKbGMyUmxabUYxYkhRdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA1LTE0VDE5OjExOjUyLjQ2OVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fb9e880540b8e59270240dbf616d57e63038798a/maxresdefault.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22maxresdefault.jpg%22%3B+filename%2A%3DUTF-8%27%27maxresdefault.jpg
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZM0JLZGtwbVJFMXFSbmt6ZG5KelREbERhMmxLVjBwTkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGliV0Y0Y21WelpHVm1ZWFZzZEM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMjFoZUhKbGMyUmxabUYxYkhRdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA1LTE0VDE5OjExOjUyLjQ2OVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fb9e880540b8e59270240dbf616d57e63038798a/maxresdefault.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22maxresdefault.jpg%22%3B+filename%2A%3DUTF-8%27%27maxresdefault.jpg" for ::1 at 2020-05-15 00:36:52 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"maxresdefault.jpg\"; filename*=UTF-8''maxresdefault.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRZM0JLZGtwbVJFMXFSbmt6ZG5KelREbERhMmxLVjBwTkJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSk5hVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGliV0Y0Y21WelpHVm1ZWFZzZEM1cWNHY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMjFoZUhKbGMyUmxabUYxYkhRdWFuQm5CanNHVkRvUlkyOXVkR1Z1ZEY5MGVYQmxTU0lQYVcxaFoyVXZhbkJsWndZN0JsUT0iLCJleHAiOiIyMDIwLTA1LTE0VDE5OjExOjUyLjQ2OVoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--fb9e880540b8e59270240dbf616d57e63038798a", "filename"=>"maxresdefault"}
+Completed 200 OK in 0ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-05-15 10:11:14 +0530
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#create as JSON
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007f8c9862f3c8 @tempfile=#<Tempfile:/var/folders/g1/h8_dnl8j4j792l65q0_f92pw0000gp/T/RackMultipart20200515-77609-rbdyhp.jpg>, @original_filename="IMG_20190910_203506.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[avatar]\"; filename=\"IMG_20190910_203506.jpg\"\r\nContent-Type: image/jpeg\r\n">}}
+[36m  Disk Storage (8.8ms) [0m[32mUploaded file to key: pY8UbAXkWA2LHztoBTBNVZtD (checksum: UXsNYVG57/tJ3CqBXdyfoA==)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[36mActiveStorage::Blob Create (23.4ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "pY8UbAXkWA2LHztoBTBNVZtD"], ["filename", "IMG_20190910_203506.jpg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 2956675], ["checksum", "UXsNYVG57/tJ3CqBXdyfoA=="], ["created_at", "2020-05-15 04:41:15.881675"]]
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (24.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Create (10.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "FridgeBlack"], ["description", "awsome fridge black"], ["price", 120000.0], ["created_at", "2020-05-15 04:41:15.953494"], ["updated_at", "2020-05-15 04:41:15.953494"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mActiveStorage::Attachment Create (43.4ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "avatar"], ["record_type", "Product"], ["record_id", 8], ["blob_id", 4], ["created_at", "2020-05-15 04:41:15.965870"]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[36mProduct Update (23.0ms)[0m  [1m[33mUPDATE "products" SET "updated_at" = $1 WHERE "products"."id" = $2[0m  [["updated_at", "2020-05-15 04:41:16.010349"], ["id", 8]]
+  ↳ app/controllers/products_controller.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:10
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 5c8e1dcd-2009-440e-a460-2de6d1e1e9a1) to Async(default) with arguments: #<GlobalID:0x00007f8c99d37778 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/4>>
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.71ms)
+Completed 200 OK in 718ms (Views: 34.7ms | ActiveRecord: 174.5ms)
+
+
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1] Performing ActiveStorage::AnalyzeJob (Job ID: 5c8e1dcd-2009-440e-a460-2de6d1e1e9a1) from Async(default) with arguments: #<GlobalID:0x00007f8c985c8b50 @uri=#<URI::GID gid://product-api/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1] [36m  Disk Storage (3.3ms) [0m[34mDownloaded file from key: pY8UbAXkWA2LHztoBTBNVZtD[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   [1m[36mActiveStorage::Blob Update (1.3ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 4]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1]   ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [5c8e1dcd-2009-440e-a460-2de6d1e1e9a1] Performed ActiveStorage::AnalyzeJob (Job ID: 5c8e1dcd-2009-440e-a460-2de6d1e1e9a1) from Async(default) in 48.52ms
+Started GET "/products/8/avatar" for ::1 at 2020-05-15 10:12:47 +0530
+Processing by ProductsController#avatar as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:22
+  [1m[36mActiveStorage::Attachment Load (52.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 8], ["record_type", "Product"], ["name", "avatar"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:24
+Redirected to http://localhost:30001/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2c96f8b6fe3e289e688166137f1a959c5385c48/IMG_20190910_203506.jpg
+Completed 302 Found in 86ms (ActiveRecord: 54.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2c96f8b6fe3e289e688166137f1a959c5385c48/IMG_20190910_203506.jpg" for ::1 at 2020-05-15 10:12:47 +0530
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f2c96f8b6fe3e289e688166137f1a959c5385c48", "filename"=>"IMG_20190910_203506"}
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/ayadav/.rvm/gems/ruby-2.7.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  Disk Storage (2.2ms) [0m[34mGenerated URL for file at key: pY8UbAXkWA2LHztoBTBNVZtD (http://localhost:30001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRms0VldKQldHdFhRVEpNU0hwMGIwSlVRazVXV25SRUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlTVTFIWHpJd01Ua3dPVEV3WHpJd016VXdOaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh5TURFNU1Ea3hNRjh5TURNMU1EWXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wNS0xNVQwNDo0Nzo0Ny42NTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e276836656dd2d26a673b249958c2e884d6d6421/IMG_20190910_203506.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_20190910_203506.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_20190910_203506.jpg)[0m
+Redirected to http://localhost:30001/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRms0VldKQldHdFhRVEpNU0hwMGIwSlVRazVXV25SRUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlTVTFIWHpJd01Ua3dPVEV3WHpJd016VXdOaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh5TURFNU1Ea3hNRjh5TURNMU1EWXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wNS0xNVQwNDo0Nzo0Ny42NTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e276836656dd2d26a673b249958c2e884d6d6421/IMG_20190910_203506.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_20190910_203506.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_20190910_203506.jpg
+Completed 302 Found in 14ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRms0VldKQldHdFhRVEpNU0hwMGIwSlVRazVXV25SRUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlTVTFIWHpJd01Ua3dPVEV3WHpJd016VXdOaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh5TURFNU1Ea3hNRjh5TURNMU1EWXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wNS0xNVQwNDo0Nzo0Ny42NTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e276836656dd2d26a673b249958c2e884d6d6421/IMG_20190910_203506.jpg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22IMG_20190910_203506.jpg%22%3B+filename%2A%3DUTF-8%27%27IMG_20190910_203506.jpg" for ::1 at 2020-05-15 10:12:47 +0530
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"IMG_20190910_203506.jpg\"; filename*=UTF-8''IMG_20190910_203506.jpg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWRjRms0VldKQldHdFhRVEpNU0hwMGIwSlVRazVXV25SRUJqb0dSVlE2RUdScGMzQnZjMmwwYVc5dVNTSlphVzVzYVc1bE95Qm1hV3hsYm1GdFpUMGlTVTFIWHpJd01Ua3dPVEV3WHpJd016VXdOaTVxY0djaU95Qm1hV3hsYm1GdFpTbzlWVlJHTFRnbkowbE5SMTh5TURFNU1Ea3hNRjh5TURNMU1EWXVhbkJuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJUGFXMWhaMlV2YW5CbFp3WTdCbFE9IiwiZXhwIjoiMjAyMC0wNS0xNVQwNDo0Nzo0Ny42NTRaIiwicHVyIjoiYmxvYl9rZXkifX0=--e276836656dd2d26a673b249958c2e884d6d6421", "filename"=>"IMG_20190910_203506"}
+Completed 200 OK in 26ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-05-15 10:12:48 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
