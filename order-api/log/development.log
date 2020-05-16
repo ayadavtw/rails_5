@@ -1943,3 +1943,496 @@ BirthdayMailer#birthday_email: processed outbound mail in 41.1ms
   Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
   Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
 BirthdayMailer#birthday_email: processed outbound mail in 7.0ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 33.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.2ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 33.6ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.1ms
+  [1m[36mUser Load (15.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (18.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (1.4ms)
+BirthdayMailer#birthday_email: processed outbound mail in 335.0ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.2ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 29.2ms
+  [1m[36mUser Load (179.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 72.0ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.2ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 35.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.8ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.4ms
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.6ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.1ms
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (2.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 103.0ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 9.7ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.9ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.4ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 33.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.3ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 35.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.5ms
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.0ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.5ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.4ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.5ms
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.4ms
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 10.5ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.1ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 8.5ms
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 8.3ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.2ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 46.0ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 9.5ms
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.5ms)
+BirthdayMailer#birthday_email: processed outbound mail in 53.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.2ms
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 40.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 6.2ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 34.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.8ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.3ms)
+BirthdayMailer#birthday_email: processed outbound mail in 33.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.9ms
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 9.3ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.5ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.3ms
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.3ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.2ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.1ms)
+BirthdayMailer#birthday_email: processed outbound mail in 9.1ms
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:12
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.7ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.6ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.5ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.7ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 51.6ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 7.0ms
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 32.5ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.6ms
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.8ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.1ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.6ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.3ms
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.0ms)
+BirthdayMailer#birthday_email: processed outbound mail in 5.8ms
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.8ms
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.7ms
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 24365.8ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.6ms
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (1.0ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 29.6ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.0ms
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.9ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 22.0ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:6
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:6
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:6
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:13
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.5ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:6
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.1ms
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:6
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.8ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 22.7ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:8
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 20.1ms
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:8
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.5ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 19.6ms
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ lib/tasks/email_tasks.rake:8
+  Rendering birthday_mailer/birthday_email.html.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.html.erb within layouts/mailer (0.6ms)
+  Rendering birthday_mailer/birthday_email.text.erb within layouts/mailer
+  Rendered birthday_mailer/birthday_email.text.erb within layouts/mailer (0.2ms)
+BirthdayMailer#birthday_email: processed outbound mail in 18.8ms
