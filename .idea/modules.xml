@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/order-api-image/order-api/order-api.iml" filepath="$PROJECT_DIR$/order-api-image/order-api/order-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-api-image/product-api/product-api.iml" filepath="$PROJECT_DIR$/product-api-image/product-api/product-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rails_5.iml" filepath="$PROJECT_DIR$/.idea/rails_5.iml" />
+    </modules>
+  </component>
+</project>

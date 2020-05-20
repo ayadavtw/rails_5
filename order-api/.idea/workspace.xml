@@ -1938,7 +1938,7 @@
       <workItem from="1589392370891" duration="497000" />
       <workItem from="1589395673451" duration="922000" />
       <workItem from="1589396815105" duration="4105000" />
-      <workItem from="1589518805962" duration="11743000" />
+      <workItem from="1589518805962" duration="15791000" />
     </task>
     <servers />
   </component>
@@ -1959,22 +1959,22 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="507" y="134" key="#xdebugger.evaluate/0.23.1440.807@0.23.1440.807" timestamp="1589627158067" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1589627683356">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1589627750155">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589627683356" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1589627683355">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.807@0.23.1440.807" timestamp="1589627750155" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1589627750155">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1589627683355" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1589627683354">
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.807@0.23.1440.807" timestamp="1589627750155" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1589627750154">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1589627683354" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1589627683355">
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.807@0.23.1440.807" timestamp="1589627750154" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1589627750155">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1589627683355" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.807@0.23.1440.807" timestamp="1589627750155" />
     <state width="1398" height="301" key="GridCell.Tab.1.bottom" timestamp="1589627463477">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
@@ -2015,14 +2015,18 @@
       <screen x="0" y="23" width="1440" height="807" />
     </state>
     <state x="100" y="123" width="1240" height="607" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.807@0.23.1440.807" timestamp="1589396608759" />
-    <state x="421" y="181" width="598" height="582" key="find.popup" timestamp="1589627457689">
+    <state x="325" y="65" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589778672198">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="421" y="181" width="598" height="582" key="find.popup/0.23.1440.807@0.23.1440.807" timestamp="1589627457689" />
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1589627211932">
+    <state x="325" y="65" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.807@0.23.1440.807" timestamp="1589778672198" />
+    <state x="421" y="181" width="598" height="582" key="find.popup" timestamp="1589778677848">
       <screen x="0" y="23" width="1440" height="807" />
     </state>
-    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1589627211932" />
+    <state x="421" y="181" width="598" height="582" key="find.popup/0.23.1440.807@0.23.1440.807" timestamp="1589778677848" />
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1589779316063">
+      <screen x="0" y="23" width="1440" height="807" />
+    </state>
+    <state x="385" y="154" width="670" height="676" key="search.everywhere.popup/0.23.1440.807@0.23.1440.807" timestamp="1589779316063" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2037,7 +2041,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/orders_controller.rb</url>
-          <line>4</line>
+          <line>6</line>
           <properties myBlockOrdinal="-1">
             <option name="block-ordinal" value="-1" />
           </properties>
@@ -2050,14 +2054,6 @@
             <option name="block-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/tasks/email_tasks.rake</url>
-          <line>7</line>
-          <properties myBlockOrdinal="-1">
-            <option name="block-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/mailers/birthday_mailer.rb</url>
