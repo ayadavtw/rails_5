@@ -2,7 +2,10 @@
 class ProductsController < ApplicationController
 
   def show
+    logger.debug "Showing products############@@@@@@@@@@@@!!!"
     render json: Product.find(params[:id]), serializer:ProductsSerializer
+    rescue ActiveRecord::RecordNotFound => e
+      render json: {error: e.message}, :status => :not_found
   end
 
   def create
@@ -20,7 +23,6 @@ class ProductsController < ApplicationController
 
   def avatar
     @product = Product.find_by(id: params[:id])
-
     if @product&.avatar&.attached?
       redirect_to rails_blob_url(@product.avatar)
     else

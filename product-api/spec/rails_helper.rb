@@ -4,6 +4,14 @@ require 'shoulda/matchers'
 require 'support/factory_bot'
 ENV['RAILS_ENV'] ||= 'test'
 
+ENV['DB_NAME'] ||= 'product_api'
+ENV['DB_NAME_TEST'] ||= 'product_api_test'
+ENV['DB_VENDOR'] ||= 'postgresql'
+ENV['DB_ADDR'] ||= 'localhost'
+ENV['DB_PORT'] ||= '5432'
+ENV['DB_USER'] ||= 'product_user'
+ENV['DB_PASSWORD'] ||= 'product_password'
+
 require File.expand_path('../config/environment', __dir__)
 
 # Prevent database truncation if the environment is production

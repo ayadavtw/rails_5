@@ -7,6 +7,10 @@ networks:
       config:
         - subnet: 172.13.0.0/16
 
+volumes:
+  splunk-var:
+  splunk-etc:
+
 services:
    db:
       image: postgres:12.3-alpine
@@ -23,7 +27,7 @@ services:
          - ./postgres-data/local-db-user-init.sh:/docker-entrypoint-initdb.d/init-user-db.sh
       networks:
          local_net:
-            ipv4_address: '172.13.10.2'
+            ipv4_address: '172.13.1.2'
       healthcheck:
          test: ['CMD-SHELL', 'pg_isready -U order_user -d order_api && pg_isready -U order_user -d order_api_test']
          timeout: 20s
@@ -33,7 +37,7 @@ services:
       build: ./product-api
       environment:
         - DB_VENDOR=postgresql
-        - DB_ADDR=172.13.10.2
+        - DB_ADDR=172.13.1.2
         - DB_PORT=5432
         - DB_USER=product_user
         - DB_PASSWORD=product_password
@@ -41,7 +45,7 @@ services:
         - DB_NAME=product_api
       command: bundle exec rails s -p 3000 -b '0.0.0.0'
       volumes:
-        - .:/product-api
+        - ./product-api:/api
       container_name: product_api_1
       depends_on:
         db:
@@ -56,7 +60,7 @@ services:
      build: ./order-api
      environment:
        - DB_VENDOR=postgresql
-       - DB_ADDR=172.13.10.2
+       - DB_ADDR=172.13.1.2
        - DB_PORT=5432
        - DB_USER=order_user
        - DB_PASSWORD=order_password
@@ -65,7 +69,7 @@ services:
        - PRODUCT_PORT=3000
      command: bundle exec rails s -p 3000 -b '0.0.0.0'
      volumes:
-       - .:/order-api
+       - ./order-api:/api
      container_name: order_api_1
      depends_on:
        db:
@@ -75,3 +79,73 @@ services:
          ipv4_address: '172.13.1.4'
      ports:
        - 3001:3000
+   nginx:
+     image: nginx:1.17.10-alpine
+     container_name: nginx_1
+#     logging:
+#       driver: splunk
+#       options:
+#         splunk-url: https://172.13.1.6:8088
+#         splunk-token: eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIHNwbHVua19hcHAiLCJzdWIiOiJhZG1pbiIsImF1ZCI6ImFjY2Vzc19sb2ciLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiI2MTVkNmZhNDcwZjZkNGIzZGQxN2YxN2IxMjM0MjIxNGQxZjkwZTFlZDk0NTNmNGUwZTY4ZjIxMzE2ZGQwZTJjIiwiaWF0IjoxNTkwNDMyNDgyLCJleHAiOjE2MjE5Njg0ODIsIm5iciI6MTU5MDQzMjQ4Mn0.z1BwYwgspxRvcXzOlxHDa36IshJt79NXHWbYwlLcMj9plLxZr5ZQ_Hs18yUldcimtihcly4ACdAP_rfHV4gLOQ
+     ports:
+       - 8080:80
+       - 80:80
+       - 443:443
+     volumes:
+       - ./nginx.conf:/etc/nginx/nginx.conf
+       - ./nginx.location.conf:/etc/nginx/nginx.location.conf
+       - ./poc.onrails.com.crt:/etc/nginx/poc.onrails.com.crt
+       - ./poc.onrails.com.key:/etc/nginx/poc.onrails.com.key
+     entrypoint: nginx-debug -g 'daemon off;'
+     depends_on:
+       - splunk
+     networks:
+       local_net:
+         ipv4_address: '172.13.1.5'
+
+   vsplunk_uf:
+     image: busybox
+     volumes:
+       - /opt/splunk/etc
+       - /opt/splunk/var
+
+   splunk:
+     image: splunk/splunk:latest
+     container_name: app_log
+     hostname: splunk_app
+     environment:
+       - SPLUNK_ENABLE_LISTEN=9997
+       - SPLUNK_START_ARGS=--accept-license --no-prompt --answer-yes
+       - SPLUNK_USERNAME=admin
+       - SPLUNK_PASSWORD=password
+     volumes_from:
+       - vsplunk_uf
+     ports:
+       - "8000:8000"
+       - "9997:9997"
+     restart: always
+     networks:
+       local_net:
+         ipv4_address: '172.13.1.6'
+         aliases:
+           - splunk
+
+   splunk_forwarder:
+     image: splunk/universalforwarder:latest
+     container_name: app_log_sender
+     hostname: splunk_forwarder
+     environment:
+       - SPLUNK_START_ARGS=--accept-license --no-prompt --answer-yes
+       - SPLUNK_PASSWORD=password
+       - SPLUNK_FORWARD_SERVER=splunk_app:9997
+     volumes_from:
+       - vsplunk_uf
+     ports:
+       - "8088:8088"
+       - "8082:8082"
+     restart: always
+     networks:
+       local_net:
+         ipv4_address: '172.13.1.7'
+         aliases:
+           - splunk_forawarder
