@@ -4,6 +4,8 @@
 .idea/*
 log/*
 product-api/tmp/*
+product-api/log/*
 order-api/tmp/*
+order-api/log/*
 postgres-data/shared/*
 
