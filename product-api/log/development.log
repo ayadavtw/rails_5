@@ -2543,3 +2543,43 @@ Completed 200 OK in 220ms (Views: 73.7ms | ActiveRecord: 21.6ms)
   ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
   [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/ayadav/.rvm/rubies/ruby-2.7.0/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "product_api" ENCODING = 'utf8'[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "product_api_test" ENCODING = 'utf8'[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2658482816873730000)[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2658482816873730000)[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/lib/ruby/gems/2.7.0/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/products/1" for 172.13.0.1 at 2020-05-25 19:44:29 +0000
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black"}, "id"=>"1"}
+Showing products############@@@@@@@@@@@@
+  [1m[36mProduct Load (3.7ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:6
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (0.68ms)
+Completed 200 OK in 257ms (Views: 48.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/products/1" for 172.13.0.1 at 2020-05-25 19:44:59 +0000
+Processing by ProductsController#show as JSON
+  Parameters: {"product"=>{"name"=>"FridgeBlack", "price"=>"120000", "description"=>"awsome fridge black"}, "id"=>"1"}
+Showing products############@@@@@@@@@@@@!!!
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:6
+[active_model_serializers] Rendered ProductsSerializer with ActiveModelSerializers::Adapter::Attributes (1.33ms)
+Completed 200 OK in 78ms (Views: 3.7ms | ActiveRecord: 4.7ms)
+
+

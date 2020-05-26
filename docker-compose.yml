@@ -149,3 +149,9 @@ services:
          ipv4_address: '172.13.1.7'
          aliases:
            - splunk_forawarder
+
+   redis:
+     image: 'redis:6.0.3-alpine'
+     command: redis-server --requirepass password
+     volumes:
+       - 'redis:/data'

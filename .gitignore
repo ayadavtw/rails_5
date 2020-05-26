@@ -1,0 +1,9 @@
+.git
+.dockerignore
+.byebug_history
+.idea/*
+log/*
+product-api/tmp/*
+order-api/tmp/*
+postgres-data/shared/*
+
