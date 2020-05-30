@@ -4,13 +4,13 @@ default: &default
   timeout: 50000
 development:
   <<: *default
-  database: <%= ENV.fetch("DB_NAME") %>
-  username: <%= ENV.fetch("DB_USER") %>
-  password: <%= ENV.fetch("DB_PASSWORD") %>
-  host: <%= ENV.fetch("DB_ADDR") %>
+  database: <%= ENV.fetch("DB_NAME") {"product_api"}%>
+  username: <%= ENV.fetch("DB_USER") {"product_user"}%>
+  password: <%= ENV.fetch("DB_PASSWORD") {"product_password"}%>
+  host: <%= ENV.fetch("DB_ADDR") {"172.13.1.2"} %>
 test:
   <<: *default
-  database: <%= ENV.fetch("DB_NAME_TEST") %>
-  username: <%= ENV.fetch("DB_USER") %>
-  password: <%= ENV.fetch("DB_PASSWORD") %>
-  host: <%= ENV.fetch("DB_ADDR") %>
+  database: <%= ENV.fetch("DB_NAME_TEST") {"product_api_test"}%>
+  username: <%= ENV.fetch("DB_USER") {"product_user"}%>
+  password: <%= ENV.fetch("DB_PASSWORD") {"product_password"}%>
+  host: <%= ENV.fetch("DB_ADDR") {"172.13.1.2"} %>
