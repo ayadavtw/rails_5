@@ -40,7 +40,7 @@ ExceptionNotification.configure do |config|
 
   #Webhook notifier sends notifications over HTTP protocol. Requires 'httparty' gem.
   config.add_notifier :slack, {
-    webhook_url: 'https://hooks.slack.com/services/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',
+    webhook_url: ENV.fetch("webhook_url"){ "https://hooks.slack.com/services/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" },
     channel: '#project',
     http_method: :post,
     username: "dev-exception", # ENV based username to distinguish Staging Exceptions in channel

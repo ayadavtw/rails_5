@@ -42,7 +42,7 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
@@ -74,12 +74,29 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
-    logger.formatter = config.log_formatter
-    config.logger    = ActiveSupport::TaggedLogging.new(logger)
+  # if ENV["RAILS_LOG_TO_STDOUT"].present?
+  #   logger           = ActiveSupport::Logger.new(STDOUT)
+  #   logger.formatter = config.log_formatter
+  #   config.logger    = ActiveSupport::TaggedLogging.new(logger)
+  # end
+  if ENV["LOG_LEVEL"].present?
+    config.log_level = ENV["LOG_LEVEL"].downcase.strip.to_sym
   end
-
+  if ENV["RAILS_LOG_TO_STDOUT"].present?
+    STDOUT.sync = true
+    # SemanticLogger.format = :color
+    # SemanticLogger.started = true
+    #config.rails_semantic_logger.add_appender(file_name: 'atul_development.log', formatter: :color)
+    SemanticLogger.add_appender(file_name: 'a-development.log', formatter: :color)
+    SemanticLogger.add_appender(
+        appender: :splunk_http,
+        url: 'http://172.13.1.6:8088/services/collector/raw',
+        token: 'a142c6b8-dde0-4c48-a1c9-5edd245ae447',
+        level: 'info',
+        host: 'DOCKER_PRODUCT_API',
+        application: 'PRODUCT_API'
+        )
+  end
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end

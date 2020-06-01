@@ -32,6 +32,9 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 # process behavior so workers use less memory.
 #
 # preload_app!
-
+on_worker_boot do
+  # Re-open appenders after forking the process
+  SemanticLogger.reopen
+end
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart

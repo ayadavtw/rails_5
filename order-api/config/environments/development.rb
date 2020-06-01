@@ -1,3 +1,4 @@
+require 'rails_semantic_logger'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -63,4 +64,26 @@ Rails.application.configure do
       :authentication       => "plain",
       :enable_starttls_auto => true
   }
+  if ENV["LOG_LEVEL"].present?
+    config.log_level = ENV["LOG_LEVEL"].downcase.strip.to_sym
+  end
+  if ENV["RAILS_LOG_TO_STDOUT"].present?
+    STDOUT.sync = true
+    config.rails_semantic_logger.add_file_appender = false
+    config.semantic_logger.add_appender(io: STDOUT, level: config.log_level, formatter: config.rails_semantic_logger.format)
+  end
+
+  if ENV["RAILS_LOG_TO_STDOUT"].present?
+    STDOUT.sync = true
+    config.rails_semantic_logger.format = :json
+    config.rails_semantic_logger.started = true
+    config.rails_semantic_logger.add_appender(file_name: 'atul_development.log', formatter: :color)
+    config.rails_semantic_logger.add_appender(
+        appender: :splunk_http,
+        url: 'http://172.13.1.6:8088/services/collector/raw',
+        token: 'a142c6b8-dde0-4c48-a1c9-5edd245ae447',
+        level: config.log_level,
+        application: 'ORDER_API',
+        )
+  end
 end

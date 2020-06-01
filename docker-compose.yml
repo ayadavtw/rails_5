@@ -44,6 +44,8 @@ services:
         - DB_PASSWORD=product_password
         - DB_NAME_TEST=product_api_test
         - DB_NAME=product_api
+        - webhook_url=https://hooks.slack.com/services/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
+        - RAILS_LOG_TO_STDOUT:true
       command: bundle exec rails s -p 3000 -b '0.0.0.0'
       volumes:
         - ./product-api:/api
@@ -70,6 +72,7 @@ services:
        - DB_NAME_TEST=order_api_test
        - DB_NAME=order_api
        - PRODUCT_PORT=3000
+       - webhook_url=https://hooks.slack.com/services/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
      command: bundle exec rails s -p 3000 -b '0.0.0.0'
      volumes:
        - ./order-api:/api
@@ -88,8 +91,9 @@ services:
 #     logging:
 #       driver: splunk
 #       options:
-#         splunk-url: https://172.13.1.6:8088
-#         splunk-token: eyJraWQiOiJzcGx1bmsuc2VjcmV0IiwiYWxnIjoiSFM1MTIiLCJ2ZXIiOiJ2MiIsInR0eXAiOiJzdGF0aWMifQ.eyJpc3MiOiJhZG1pbiBmcm9tIHNwbHVua19hcHAiLCJzdWIiOiJhZG1pbiIsImF1ZCI6ImFjY2Vzc19sb2ciLCJpZHAiOiJTcGx1bmsiLCJqdGkiOiI2MTVkNmZhNDcwZjZkNGIzZGQxN2YxN2IxMjM0MjIxNGQxZjkwZTFlZDk0NTNmNGUwZTY4ZjIxMzE2ZGQwZTJjIiwiaWF0IjoxNTkwNDMyNDgyLCJleHAiOjE2MjE5Njg0ODIsIm5iciI6MTU5MDQzMjQ4Mn0.z1BwYwgspxRvcXzOlxHDa36IshJt79NXHWbYwlLcMj9plLxZr5ZQ_Hs18yUldcimtihcly4ACdAP_rfHV4gLOQ
+#         splunk-url: http://172.13.1.6:8088
+#         splunk-token: a142c6b8-dde0-4c48-a1c9-5edd245ae447
+#         splunk-insecureskipverify: true
      ports:
        - 8080:80
        - 80:80
@@ -106,13 +110,6 @@ services:
        local_net:
          ipv4_address: '172.13.1.5'
 
-   vsplunk_uf:
-     container_name: busybox_vol
-     image: busybox
-     volumes:
-       - /opt/splunk/etc
-       - /opt/splunk/var
-
    splunk:
      image: splunk/splunk:latest
      container_name: app_log
@@ -122,37 +119,20 @@ services:
        - SPLUNK_START_ARGS=--accept-license --no-prompt --answer-yes
        - SPLUNK_USERNAME=admin
        - SPLUNK_PASSWORD=password
-     volumes_from:
-       - vsplunk_uf
+       - SPLUNK_HEC_TOKEN=a142c6b8-dde0-4c48-a1c9-5edd245ae447
+     volumes:
+       - splunk-var:/opt/splunk/var
+       - splunk-etc:/opt/splunk/etc
      ports:
-       - "8000:8000"
-       - "9997:9997"
+       - 8000:8000
+       - 9997:9997
+       - 8088:8088
      restart: always
      networks:
        local_net:
          ipv4_address: '172.13.1.6'
          aliases:
            - splunk
-
-   splunk_forwarder:
-     image: splunk/universalforwarder:latest
-     container_name: app_log_sender
-     hostname: splunk_forwarder
-     environment:
-       - SPLUNK_START_ARGS=--accept-license --no-prompt --answer-yes
-       - SPLUNK_PASSWORD=password
-       - SPLUNK_FORWARD_SERVER=splunk_app:9997
-     volumes_from:
-       - vsplunk_uf
-     ports:
-       - "8088:8088"
-       - "8082:8082"
-     restart: always
-     networks:
-       local_net:
-         ipv4_address: '172.13.1.7'
-         aliases:
-           - splunk_forawarder
 
    redis:
      container_name: redis_server

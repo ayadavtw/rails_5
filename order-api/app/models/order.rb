@@ -4,7 +4,7 @@ class Order < ApplicationRecord
   belongs_to :user
 
   after_create do
-    notifier = Slack::Notifier.new "https://hooks.slack.com/services/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" do
+    notifier = Slack::Notifier.new ENV.fetch("webhook_url") do
       defaults channel: "#project",
                username: "notifier"
     end

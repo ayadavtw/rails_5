@@ -1,13 +1,8 @@
-#TODO: how to write test for controller
-#require '.././workers/product_worker.rb'
-#require 'workers/product_worker'
-require 'slack-notifier'
 module Api
   module V1
     class ProductsController < ApplicationController
-      include Sidekiq::Worker
       def show
-        puts "Showing products############@@@@@@@@@@@@!!!"
+        puts "Showing products############@@@@@@@@@@@@!!!==>"
         render json: Product.find(params[:id]), serializer:ProductsSerializer
       rescue ActiveRecord::RecordNotFound => e
         render json: {error: e.message}, :status => :not_found
